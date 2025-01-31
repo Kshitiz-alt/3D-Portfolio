@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 500px;
-  background-image: url(background.png);
+  background-image: url(/background.png);
   /* background:repeating-radial-gradient(circle, rgb(255, 255, 255) ,rgb(1, 1, 1)); */
   background-size: cover;  
   /* -webkit-backdrop-filter: blur(1px);
