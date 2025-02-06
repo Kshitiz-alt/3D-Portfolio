@@ -1,0 +1,77 @@
+
+
+Section {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+Section::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+/* Track */
+Section::-webkit-scrollbar-track {
+  border-radius: 6px;
+  
+}
+
+/* Handle */
+Section::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  
+}
+
+/* Handle on hover */
+Section::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+ 
+}
+.Front{
+    font-family: Alegreya;
+}
+.Back{
+    font-family: Alegreya;
+
+}
+
+.Images{
+    box-shadow: 0 0 10px 5px white;
+    border-radius: 1rem;
+    animation: rotateLogo 20s linear infinite;
+    transition: all 1s ease;
+    z-index: 3;
+    &:hover{
+        border: 1px solid white;
+        border-radius: 10rem;
+        box-shadow: 0 0 10px 5px white;
+    }
+}
+@keyframes rotateLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.Swipe{
+  animation: blink 3s infinite;
+  font-family: cursive;
+}
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+.ToolsImages{
+  position: inherit;
+  bottom: 1px;
+
+}

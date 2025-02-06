@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.container {
+  box-shadow: 0 0 10px 5px black;
+  max-width: 1536px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  height: 101vh;
+  scroll-snap-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    scroll-snap-type: none;
+  }
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}

@@ -1,0 +1,129 @@
+
+
+.image {
+    background-color: white;
+    border-radius: 100px;
+    transition: margin-top 1s ease;
+    box-shadow: 0 0 10px 5px cornsilk;
+
+    &:hover {
+        margin-top: 1rem;
+    }
+}
+
+svg {
+    transition: all 1s ease;
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 0 5px 5px rgb(0, 0, 0);
+    }
+}
+
+.img1 {
+    transition: all 1s ease;
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 0 5px 5px rgb(0, 0, 0);
+    }
+}
+
+.Right {
+    .Follow {
+        text-shadow: 1px 1px 1px black;
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 8, 154));
+        border-bottom-left-radius: 17px;
+        transition: text-shadow 1s ease;
+        margin-left: 25rem;
+        &:hover{
+            text-shadow: 3px 3px 3px rgb(255, 255, 255);
+        }
+    }
+    .Border{
+        border-end-start-radius: 10px;
+    }
+    .Image1{
+        display: none;
+    }
+    .Move{
+        div{
+            border-radius: 10em;
+            div{
+                box-shadow: 0 0 10px 10px cornsilk;
+            }
+        }
+    }
+
+   
+}
+
+@media (max-width:1536) {
+    .hTitle{
+        font-size: 72px;
+
+    }
+}
+@media (max-width:1280) {
+    
+}
+
+@media (max-width:1024) {
+    .hTitle{
+        font-size: 72px;
+        
+    }
+}
+@media (max-width:320px) {
+    body{
+        min-width: 320px;
+    }
+    .hTitle{
+        font-size: 25px;
+        position: relative;
+        left: -45px;
+        .subTitle{
+            font-size: 30px;
+
+        }
+    }
+    .image{
+        width: 50px;
+
+    }
+    
+    .Left{
+        width: 13rem;
+        a{
+            display: none;
+        }
+    }
+    .Right{
+        position: absolute;
+        bottom: 155px;
+        right: 13px;
+    }
+    
+   
+    .Follow{
+        display: none;
+    }
+    Canvas{
+        position: absolute;
+        
+    }
+    .Image{
+        display: none;
+        
+    }
+    .Image1{
+        display: flex !important;
+        position: absolute;
+        left: -15rem;
+        top: 29.25rem;
+        
+
+    }
+  
+    
+}

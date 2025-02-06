@@ -1,0 +1,61 @@
+.BackGround {
+  background-color: rgba(0, 23, 156, 0.1);
+  border-radius: 10px;
+  height: 65vh;
+}
+
+.imag {
+  transform: scaleY(-1);
+  background-color: white;
+  border-radius: 100px;
+  transition: margin-top 1s ease;
+  box-shadow: 0 0 10px 5px cornsilk;
+
+  &:hover {
+    margin-top: 1rem;
+  }
+}
+
+.FormItem {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-family: Alegreya;
+}
+button {
+  border-radius: 5px;
+}
+.TEXT {
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+}
+.IMG {
+  border: 10px solid gray;
+  border-radius: 300px;
+  transition: border 1s ease;
+  &:hover {
+    border: 10px solid blue;
+  }
+}
+.BackHome {
+  width: 4em;
+  animation: rotate 20s linear infinite;
+  transition: all 1s ease;
+  border: 1px solid white;
+  border-radius: 2rem;
+  &:hover{
+    box-shadow: 0 0 1px 5px cornsilk;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

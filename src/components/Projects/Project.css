@@ -1,0 +1,37 @@
+
+.ProjectScroll {
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  scroll-snap-align: center;
+
+  -ms-overflow-style: none; /* For IE and Edge - hide scrollbar */
+}
+
+.ProjectScroll::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera - hide scrollbar */
+}
+.Card {
+  font-family: Alegreya;
+  text-shadow: 1px 1px 1px black;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  h3{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  a{
+    border-radius: 3px;
+    transition: all 1s ease;
+    &:hover{
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 0 0 10px 3px black;
+    }
+  }
+}
